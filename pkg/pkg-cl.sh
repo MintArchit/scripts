@@ -6,64 +6,63 @@ util_pkgs=(
 	tty-clock
 	git
 	gh
-	ncurses-examples
-	sysvbanner 
-	ttyload 
-	xterm
-	xorg
-	alsa-utils
-	ruby-github-markup 
+#	ncurses-examples
+#	sysvbanner 
+#	ttyload 
+#	xterm
+#	xorg
+#	alsa-utils
+#	ruby-github-markup 
 	jp2a
 	aview
-	bb
-	alsa-base
-	alsa-tools
-	alsa-firmware-loaders
-	alsaplayer
+#	alsa-base
+#	alsa-tools
+#	alsa-firmware-loaders
+#	alsaplayer
 	espeak
 	elinks
 	net-tools
-	network-manager
+#	network-manager
 	htop
 	pwgen
-	cloud-image-utils
+#	cloud-image-utils
 	vifm
 	vim
 	neofetch
-	testdisk
-	trash-cli
-	tldr
+#	testdisk
+#	trash-cli
+#	tldr
 	tmux
 	neovim
 	most
-	golang-go
-	ttf-mscorefonts-installer
+#	golang-go
+#	ttf-mscorefonts-installer
 )
 
 style_pkgs=(
-	bb
-	boxes 
-	beep
-	aewan
-	libaa1
-	libaa1-dev
-	libaa-bin 
+#	bb
+#	boxes 
+#	beep
+#	aewan
+#	libaa1
+#	libaa1-dev
+#	libaa-bin 
 	toilet
 	cowsay
 	whiptail
-	linuxlogo
+#	linuxlogo
 	dialog
-	lolcat
+#	lolcat
 	pv
 	nyancat
 	cmatrix
-	cbonsai
+#	cbonsai
 	sl
 	fortune
 	toilet
 	figlet
-	caca-utils
-	cli-spinner
+#	caca-utils
+#	cli-spinner
 )
 
 game_pkgs=(
@@ -73,23 +72,23 @@ game_pkgs=(
 	ninvaders
 	bastet
 	nudoku
-	2048
-	bsdgames
-	bsdgames-nonfree
-	nethack-console
-	fortune-mod
+#	2048
+#	bsdgames
+#	bsdgames-nonfree
+#	nethack-console
+#	fortune-mod
 	gnuchess
 	angband
-	bombardier
-	asciijump
+#	bombardier
+#	asciijump
 	curseofwar
 	greed
 	crawl
-	gearhead
-	gearhead2
+#	gearhead
+#	gearhead2
 	moria
-	tome
-	zangband
+#	tome
+#	zangband
 )
 
 pwd
@@ -97,7 +96,7 @@ pwd
 prefix="pkg"
 suffix="> stdout.txt 2> stderr.txt"
 
-apt="$prefix.sh"
+apt="./pkg/$prefix.sh"
 install="$prefix install -y "${util_pkgs[@]}" "${style_pkgs[@]}" "${game_pkgs[@]}" $@ "
 dep="$prefix install -q -y fortune figlet"
 
