@@ -3,6 +3,13 @@
 # pkg installer / updater
 
 util_pkgs=(
+	zsh
+	man
+	cronie
+	proot
+	proot-distro
+	zsh
+	wget
 	tty-clock
 	git
 	gh

@@ -3,6 +3,4 @@
 # author:	mintarchit
 # version:	1.0
 
-./pkg/pkg-cl.sh
-./git/gitinit.sh
-
+git add . && git commit -m "$1" && git push
