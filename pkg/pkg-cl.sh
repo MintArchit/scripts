@@ -80,6 +80,7 @@ game_pkgs=(
 	bastet
 	nudoku
 #	2048
+	bsd-games
 #	bsdgames
 #	bsdgames-nonfree
 #	nethack-console

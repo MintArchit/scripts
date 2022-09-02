@@ -1,7 +1,7 @@
 No mirror or mirror group selected. You might want to select one by running 'termux-change-repo'
 Checking availability of current mirror:
-[*] https://packages.termux.dev/apt/termux-main/: ok
-Hit:1 https://packages.termux.dev/apt/termux-main stable InRelease
+[*] https://packages.nscdn.top/termux-main: ok
+Hit:1 https://packages.nscdn.top/termux-main stable InRelease
 Reading package lists...
 Building dependency tree...
 Reading state information...

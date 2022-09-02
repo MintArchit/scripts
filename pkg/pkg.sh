@@ -10,8 +10,8 @@ suffix="> stdout.txt 2> stderr.txt"
 update="$prefix update -y $suffix"
 upgrade="$prefix upgrade -qq -y"
 
-txt0='printf "sudo apt update"'
-txt1='printf " / sudo apt upgrade"'
+txt0='printf "pkg update"'
+txt1='printf " / pkg upgrade"'
 
 cmd="$txt0 && $update && $txt1 && $upgrade"
 eval "$cmd"
