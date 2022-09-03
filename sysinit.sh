@@ -6,11 +6,11 @@
 pth="./pkg"
 
 pkg="$pth/pkg-cl.sh"
-#./git/gitinit.sh
+git="./git/gitinit.sh"
 gem="$pth/gem.sh"
 go="$pth/go.sh"
 
-eval "$pkg && $gem && $go"
+eval "$pkg && $gem && $go && $git"
 
 echo -e "\n fortune ~ $(fortune) \n"
 
