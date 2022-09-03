@@ -3,19 +3,21 @@
 # auto pkg installer / updater
 
 util_pkgs=(
-	github.com/antonmedv/countdown@latest
+
 )
 
 style_pkgs=(
+	colorls
+	lolcat
 )
 
-prefix="go"
+prefix="gem"
 suffix="> stdout.txt 2> stderr.txt"
 
 install="$prefix install "${util_pkgs[@]}" "${style_pkgs[@]}" $@ "
 
-title="figlet -ct \"Go  Installer\" | lolcat"
-txt0='printf "go install pkgs\n\n"'
+title="figlet -ct \"Gem  Installer\""
+txt0='printf "gem install pkgs\n\n"'
 
 cmd="$title && $txt0 && $install"
 eval "$cmd"

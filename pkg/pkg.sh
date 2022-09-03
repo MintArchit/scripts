@@ -7,11 +7,11 @@
 prefix="pkg"
 suffix="> stdout.txt 2> stderr.txt"
 
-update="$prefix update -y $suffix"
-upgrade="$prefix upgrade -qq -y"
+update="$prefix update -y"
+upgrade="$prefix upgrade -y"
 
-txt0='printf "pkg update"'
-txt1='printf " / pkg upgrade"'
+txt0='printf "pkg update\n\n"'
+txt1='printf "pkg upgrade\n\n"'
 
 cmd="$txt0 && $update && $txt1 && $upgrade"
 eval "$cmd"

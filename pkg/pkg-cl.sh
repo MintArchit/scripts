@@ -3,6 +3,8 @@
 # pkg installer / updater
 
 util_pkgs=(
+	ruby
+	python
 	zsh
 	man
 	cronie
@@ -42,6 +44,7 @@ util_pkgs=(
 	tmux
 	neovim
 	most
+	golang
 #	golang-go
 #	ttf-mscorefonts-installer
 )
@@ -99,8 +102,6 @@ game_pkgs=(
 #	zangband
 )
 
-pwd
-
 prefix="pkg"
 suffix="> stdout.txt 2> stderr.txt"
 
@@ -110,10 +111,9 @@ dep="$prefix install -q -y fortune figlet"
 
 txt0='echo -ne "\rinstall dependencies"'
 title="figlet -tc \"PKG Installer\""
-txt1='printf " / pkg install pkgs\n\n"'
+txt1='printf "pkg install pkgs\n\n"'
 
 cmd="$apt txt0 && $dep && $title && $txt1 && $install"
 eval "$cmd"
 
 echo -e "\nutil: ${util_pkgs[@]}\n\nstyle: ${style_pkgs[@]}\n\nmind: ${game_pkgs[@]}"
-echo -e "\n fortune ~ $(fortune) \n"
