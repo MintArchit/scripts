@@ -94,18 +94,16 @@ game_pkgs=(
 
 prefix="sudo apt-get"
 suffix="> stdout.txt 2> stderr.txt"
+apt="./pkg/apt.sh"
 
-update="$prefix update -y $suffix"
-upgrade="$prefix upgrade -qq -y"
+dep="$prefix install -q -y fortune figlet lolcat"
 install="$prefix install -q -y "${util_pkgs[@]}" "${style_pkgs[@]}" "${game_pkgs[@]}" $@ "
 
 title="figlet -tc \"APT Installer\" | lolcat"
-txt0='printf "sudo apt update"'
-txt1='printf " / sudo apt upgrade"'
-txt2='printf " / sudo apt install pkgs\n\n"'
+txt0='echo -ne "\rinstall dependencies"'
+txt1='printf " / sudo apt install pkgs\n\n"'
 
-cmd="$title && sudo -v && $txt0 && $update && $txt1 && $upgrade && $txt2 && $install"
+cmd="$apt && $txt0 && $dep && $title && $txt1 && $install"
 eval "$cmd"
 
 echo -e "\nutil: ${util_pkgs[@]}\n\nstyle: ${style_pkgs[@]}\n\nmind: ${game_pkgs[@]}" | lolcat
-echo -e "\n fortune ~ $(fortune fortunes) \n"

@@ -105,7 +105,7 @@ game_pkgs=(
 prefix="pkg"
 suffix="> stdout.txt 2> stderr.txt"
 
-apt="./pkg/$prefix.sh"
+pkg="./pkg/$prefix.sh"
 install="$prefix install -y "${util_pkgs[@]}" "${style_pkgs[@]}" "${game_pkgs[@]}" $@ "
 dep="$prefix install -q -y fortune figlet"
 
@@ -113,7 +113,7 @@ txt0='echo -ne "\rinstall dependencies"'
 title="figlet -tc \"PKG Installer\""
 txt1='printf "pkg install pkgs\n\n"'
 
-cmd="$apt txt0 && $dep && $title && $txt1 && $install"
+cmd="$pkg && $txt0 && $dep && $title && $txt1 && $install"
 eval "$cmd"
 
 echo -e "\nutil: ${util_pkgs[@]}\n\nstyle: ${style_pkgs[@]}\n\nmind: ${game_pkgs[@]}"
