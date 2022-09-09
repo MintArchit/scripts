@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # author:	mintarchit
-# version:	1.0
+# version:	1.1
 
 pth="./pkg"
 
@@ -12,7 +12,7 @@ gem="$pth/gem.sh"
 go="$pth/go.sh"
 pip="$pth/pip.sh"
 
-eval "$apt && $gem && $pip && $git"
+# eval "$apt && $gem && $pip && $git"
+# echo -e "\n fortune ~ $(fortune) \n"
 
-echo -e "\n fortune ~ $(fortune) \n"
-
+whiptail --checklist "infotext" 20 30 10 "apt" "<" 0 "pkg" "<" 0
