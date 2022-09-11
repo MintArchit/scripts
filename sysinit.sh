@@ -15,4 +15,6 @@ pip="$pth/pip.sh"
 # eval "$apt && $gem && $pip && $git"
 # echo -e "\n fortune ~ $(fortune) \n"
 
-whiptail --checklist "infotext" 20 30 10 "apt" "<" 0 "pkg" "<" 0
+cmd='whiptail --checklist "infotext" 20 30 10 "apt" "<" 0 "pkg" "<" 0'
+
+eval $cmd
