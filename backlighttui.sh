@@ -21,6 +21,8 @@ then
 	if [[ "$selected" == "0" ]]
 	then
 		echo "0 not allowed, since that turns off the screen"
+	elif
+		eval "$max"
 	else
 		eval "$cmd"
 	fi
