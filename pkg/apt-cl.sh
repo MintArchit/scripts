@@ -8,6 +8,8 @@ lang_pkgs=(
 )
 
 util_pkgs=(
+	acpi
+	powertop
 	zsh
 	tty-clock
 #	cronie
