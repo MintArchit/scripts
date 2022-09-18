@@ -1,12 +1,19 @@
 #!/bin/bash
 
-# auto pkg installer / updater
+# auto apt installer / updater
+
+lang_pkgs=(
+	python3
+	ruby
+)
 
 util_pkgs=(
+	zsh
 	tty-clock
+#	cronie
+	wget
 	git
 	gh
-	ncurses-examples
 	sysvbanner 
 	ttyload 
 	xterm
@@ -36,7 +43,6 @@ util_pkgs=(
 	tmux
 	neovim
 	most
-	golang-go
 	ttf-mscorefonts-installer
 )
 
@@ -97,7 +103,7 @@ suffix="> stdout.txt 2> stderr.txt"
 apt="./pkg/apt.sh"
 
 dep="$prefix install -q -y fortune figlet lolcat"
-install="$prefix install -q -y "${util_pkgs[@]}" "${style_pkgs[@]}" "${game_pkgs[@]}" $@ "
+install="$prefix install -q -y "${lang_pkgs[@]}" "${util_pkgs[@]}" "${style_pkgs[@]}" "${game_pkgs[@]}" $@ "
 
 title="figlet -tc \"APT Installer\" | lolcat"
 txt0='echo -ne "\rinstall dependencies"'
