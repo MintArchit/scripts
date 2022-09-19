@@ -8,6 +8,9 @@ lang_pkgs=(
 )
 
 util_pkgs=(
+	pup
+	recode
+	jq
 	acpi
 	powertop
 	zsh

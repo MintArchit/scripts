@@ -3,6 +3,9 @@
 # pkg installer / updater
 
 util_pkgs=(
+	pup
+	recode
+	jq
 	ruby
 	python
 	zsh
