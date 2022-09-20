@@ -15,18 +15,20 @@ num="whiptail --inputbox \"max brightness: $max \\ncurrent brightness: $current\
 selected=$(eval $num)
 
 cmd="echo $selected | sudo tee /sys/class/backlight/*/brightness"
+setmax="echo $max | sudo tee /sys/class/backlight/*/brightness"
 
-if [ $? -eq 0 ] && echo "whiptail was successful"
+if [[ $? -eq 0 ]] && echo "whiptail was successful"
 then
 	if [[ "$selected" == "0" ]]
 	then
 		echo "0 not allowed, since that turns off the screen"
-	elif
-		eval "$max"
+	elif [[ "$selected" == "max" ]]
+	then
+		eval "$setmax"
 	else
 		eval "$cmd"
 	fi
-elif [ $? -eq 1 ] 
+elif [[ $? -eq 1 ]] 
 then
 	# echo "whiptail was canceled"
 	exit 0
