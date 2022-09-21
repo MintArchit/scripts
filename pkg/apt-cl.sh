@@ -8,7 +8,12 @@ lang_pkgs=(
 )
 
 util_pkgs=(
-	pup
+	i3
+	feh
+	nemo
+	bluez
+	ffmpeg
+#	pup
 	recode
 	jq
 	acpi
