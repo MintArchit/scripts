@@ -11,3 +11,5 @@ cp -r "$pth0/chrome" $pth1
 
 sudo mkdir -p /etc/firefox/policies
 sudo cp -r "$pth0/policies.json" "/etc/firefox/policies/"
+
+./ffext.sh
