@@ -11,7 +11,7 @@ update="$prefix update -y $suffix"
 upgrade="$prefix upgrade -qq -y"
 
 txt0='printf "sudo apt update"'
-txt1='printf " / sudo apt upgrade"'
+txt1='printf " / sudo apt upgrade\n"'
 
 cmd="sudo -v && $txt0 && $update && $txt1 && $upgrade"
 eval "$cmd"
