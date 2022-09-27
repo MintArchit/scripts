@@ -5,4 +5,6 @@
 
 ghcl="gh repo clone"
 
-ghcl="ghcl dotfiles && ghcl notes && ghcl db"
+cmd="$ghcl dotfiles && $ghcl notes && $ghcl db"
+
+eval $cmd
