@@ -3,4 +3,4 @@
 # author:	mintarchit
 # version:	1.0
 
-clear && ls
+clear && ls --color

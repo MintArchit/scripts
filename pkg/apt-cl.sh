@@ -112,7 +112,7 @@ game_pkgs=(
 
 prefix="sudo apt-get"
 suffix="> stdout.txt 2> stderr.txt"
-apt="./pkg/apt.sh"
+apt="$HOME/ghub/scripts/pkg/apt.sh"
 
 dep="$prefix install -q -y fortune figlet lolcat"
 install="$prefix install -q -y "${lang_pkgs[@]}" "${util_pkgs[@]}" "${style_pkgs[@]}" "${game_pkgs[@]}" $@ "
