@@ -10,6 +10,7 @@ lang_pkgs=(
 )
 
 util_pkgs=(
+	apt-utils
 	i3
 	feh
 	nemo
