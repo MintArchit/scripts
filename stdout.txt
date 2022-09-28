@@ -1,5 +1,10 @@
 Hit:1 http://ports.ubuntu.com/ubuntu-ports jammy InRelease
 Get:2 http://ports.ubuntu.com/ubuntu-ports jammy-updates InRelease [114 kB]
 Get:3 http://ports.ubuntu.com/ubuntu-ports jammy-security InRelease [110 kB]
-Fetched 224 kB in 2s (129 kB/s)
+Get:4 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 Packages [577 kB]
+Get:5 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main Translation-en [142 kB]
+Get:6 http://ports.ubuntu.com/ubuntu-ports jammy-updates/universe arm64 Packages [387 kB]
+Get:7 http://ports.ubuntu.com/ubuntu-ports jammy-security/main arm64 Packages [319 kB]
+Get:8 http://ports.ubuntu.com/ubuntu-ports jammy-security/main Translation-en [80.0 kB]
+Fetched 1729 kB in 4s (422 kB/s)
 Reading package lists...

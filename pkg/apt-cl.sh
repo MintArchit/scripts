@@ -10,6 +10,7 @@ lang_pkgs=(
 )
 
 util_pkgs=(
+	sleepenh
 	curl
 	apt-utils
 	i3
