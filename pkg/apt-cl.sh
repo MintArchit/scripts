@@ -114,7 +114,6 @@ game_pkgs=(
 )
 
 prefix="sudo apt-get"
-suffix="> stdout.txt 2> stderr.txt"
 apt="$HOME/ghub/scripts/pkg/apt.sh"
 
 dep="$prefix install -q -y fortune figlet lolcat"

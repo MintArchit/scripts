@@ -5,7 +5,7 @@
 # description:	apt updater
 
 prefix="sudo apt-get"
-suffix="> stdout.txt 2> stderr.txt"
+suffix="> stdout.log 2> stderr.log"
 
 update="$prefix update -y $suffix"
 upgrade="$prefix upgrade -qq -y"
