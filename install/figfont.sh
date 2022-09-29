@@ -3,5 +3,5 @@
 pre="figlet -tc -f"
 suf="test"
 
-arg
+#arg
 eval "$pre $suf"

@@ -106,9 +106,8 @@ game_pkgs=(
 )
 
 prefix="pkg"
-suffix="> stdout.txt 2> stderr.txt"
 
-pkg="./pkg/$prefix.sh"
+pkg="$HOME/ghub/scripts/utils/$prefix.sh"
 install="$prefix install -y "${util_pkgs[@]}" "${style_pkgs[@]}" "${game_pkgs[@]}" $@ "
 dep="$prefix install -q -y fortune figlet"
 
