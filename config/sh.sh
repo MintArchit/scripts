@@ -12,6 +12,7 @@ powerlevel10="git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $
 $ohmyzsh
 $powerlevel10
 cp $HOME/ghub/dotfiles/sh/.zshrc ~
+cp $HOME/ghub/dotfiles/sh/.p10k.zsh ~
 
 #chsh -s /bin/zsh
 #cat /etc/shells
