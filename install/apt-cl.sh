@@ -11,7 +11,9 @@ lang_pkgs=(
 )
 
 util_pkgs=(
+	fbterm
 	sleepenh
+	sqlite3
 	curl
 	apt-utils
 	i3
