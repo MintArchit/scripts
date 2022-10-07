@@ -8,9 +8,16 @@ lang_pkgs=(
 	python3-pip
 	python3.10-venv
 	ruby
+	cargo
 )
 
 util_pkgs=(
+	cmake
+	pkg-config
+	libfreetype6-dev
+	libfontconfig1-dev
+	libxcb-xfixes0-dev 
+	libxkbcommon-dev
 	gnome-tweaks
 	gnome-shell-extensions 
 	gnome-shell-extension-desktop-icons-ng 
