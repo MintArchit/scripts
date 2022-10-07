@@ -12,6 +12,7 @@ lang_pkgs=(
 )
 
 util_pkgs=(
+	picom
 	gzip
 	plocate
 	cmake
