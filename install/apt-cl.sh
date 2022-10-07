@@ -12,6 +12,8 @@ lang_pkgs=(
 )
 
 util_pkgs=(
+	gzip
+	plocate
 	cmake
 	pkg-config
 	libfreetype6-dev
