@@ -3,5 +3,8 @@
 # author:	mintarchit
 # version:	1.0
 
-cp $HOME/ghub/dotfiles/theme/.gtkrc-2.0 ~/.
-cp -r $HOME/ghub/dotfiles/theme/gtk-3.0 ~/.config/.
+cfg="$HOME/ghub/dotfiles/theme"
+
+cp $cfg/.gtkrc-2.0 ~/.
+cp -r $cfg/gtk-3.0 ~/.config/.
+cp -r $cfg/.icons ~/.
