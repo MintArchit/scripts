@@ -11,6 +11,9 @@ lang_pkgs=(
 )
 
 util_pkgs=(
+	lxappearance
+	gtk-chtheme
+	qt4-qtconfig
 	fbterm
 	sleepenh
 	sqlite3
