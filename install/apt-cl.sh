@@ -11,9 +11,12 @@ lang_pkgs=(
 )
 
 util_pkgs=(
+	gnome-tweaks
+	gnome-shell-extensions 
+	gnome-shell-extension-desktop-icons-ng 
 	lxappearance
 	gtk-chtheme
-	qt4-qtconfig
+#	qt4-qtconfig
 	fbterm
 	sleepenh
 	sqlite3
