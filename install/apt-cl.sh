@@ -12,6 +12,7 @@ lang_pkgs=(
 )
 
 util_pkgs=(
+	polybar
 	picom
 	gzip
 	plocate
