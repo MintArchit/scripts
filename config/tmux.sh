@@ -4,3 +4,4 @@
 # version:	1.0
 
 cp $HOME/ghub/dotfiles/.tmux.conf ~/.
+tmux kill-server
