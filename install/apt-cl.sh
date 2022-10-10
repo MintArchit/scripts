@@ -12,6 +12,7 @@ lang_pkgs=(
 )
 
 util_pkgs=(
+	mpv
 	btscanner
 	polybar
 	picom
