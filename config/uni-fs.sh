@@ -1,6 +1,9 @@
 #!/bin/bash
 
 # author:	mintarchit
-# version:	1.0
+# version:	1.1
 
-mkdir -p ./*/{lec,sh}
+cmd="mkdir -p ./*/{lec,sh}"
+
+echo "$cmd"
+eval "$cmd"
