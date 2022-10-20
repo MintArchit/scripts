@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # author:	mintarchit
-# version:	1.1
+# version:	1.2
 
-cmd="mkdir -p ./*/{lec,sh}"
-
+oldcmd="mkdir -p ./*/{lec,sh}"
+cmd="for dir in */; do mkdir -- "$dir/{lec,sh}"; done"
 echo "$cmd"
 eval "$cmd"
