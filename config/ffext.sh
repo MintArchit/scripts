@@ -7,7 +7,9 @@
 url="https://addons.mozilla.org/firefox/downloads/file"
 
 exts=(
+	4011167/traduzir_paginas_web-9.6.1.xpi
 	4004810/tree_style_tab-3.9.5.xpi
+	4003179/tst_indent_line-1.2.1.xpi
 	4000006/facebook_container-2.3.4.xpi
 	3932862/multi_account_containers-8.0.7.xpi
 	4003969/ublock_origin-1.44.4.xpi

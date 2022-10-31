@@ -9,6 +9,8 @@ lang_pkgs=(
 	python3.10-venv
 	ruby
 	cargo
+	#2GB
+	texlive-full
 )
 
 util_pkgs=(
