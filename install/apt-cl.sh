@@ -14,6 +14,7 @@ lang_pkgs=(
 )
 
 util_pkgs=(
+	font-manager
 	mpv
 	btscanner
 	polybar
