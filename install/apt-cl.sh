@@ -14,6 +14,7 @@ lang_pkgs=(
 )
 
 util_pkgs=(
+	blueman
 	fonts-firacode
 	font-manager
 	mpv
