@@ -14,6 +14,7 @@ lang_pkgs=(
 )
 
 util_pkgs=(
+	fonts-firacode
 	font-manager
 	mpv
 	btscanner
