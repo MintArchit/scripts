@@ -4,6 +4,7 @@
 # version:	1.0
 
 pth="$HOME/.config/zathura"
+dot="$HOME/ghub/dotfiles/zathura/."
 
 [ ! -d "$pth" ] && mkdir -p "$pth"
-cp $HOME/ghub/dotfiles/zathura/zathurarc $pth
+find $dot -maxdepth 1 ! -name ".*" | xargs -i cp {} -r $pth
