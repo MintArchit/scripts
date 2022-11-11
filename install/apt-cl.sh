@@ -14,6 +14,7 @@ lang_pkgs=(
 )
 
 util_pkgs=(
+	socat
 	blueman
 	fonts-firacode
 	font-manager
