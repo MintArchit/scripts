@@ -14,6 +14,7 @@ lang_pkgs=(
 )
 
 util_pkgs=(
+	renameutils
 	socat
 	blueman
 	fonts-firacode
