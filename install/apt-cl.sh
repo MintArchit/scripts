@@ -13,8 +13,26 @@ lang_pkgs=(
 	texlive-full
 )
 
+libs_pkgs=(
+	libgdk-pixbuf2.0-dev
+	libgjs-dev
+	libwnck-3-dev
+	libfreetype6-dev
+	libfontconfig1-dev
+	libxcb-xfixes0-dev 
+	libxkbcommon-dev
+)
+
 gui_pkgs=(
 	pdfarranger
+	font-manager
+	mpv
+	polybar
+	picom
+	gnome-tweaks
+	gnome-shell-extensions 
+	gnome-shell-extension-desktop-icons-ng 
+	lxappearance
 )
 
 util_pkgs=(
@@ -22,23 +40,11 @@ util_pkgs=(
 	socat
 	blueman
 	fonts-firacode
-	font-manager
-	mpv
 	btscanner
-	polybar
-	picom
 	gzip
 	plocate
 	cmake
 	pkg-config
-	libfreetype6-dev
-	libfontconfig1-dev
-	libxcb-xfixes0-dev 
-	libxkbcommon-dev
-	gnome-tweaks
-	gnome-shell-extensions 
-	gnome-shell-extension-desktop-icons-ng 
-	lxappearance
 	gtk-chtheme
 #	qt4-qtconfig
 	fbterm
@@ -150,7 +156,7 @@ prefix="sudo apt-get"
 apt='$HOME/ghub/scripts/utils/apt.sh'
 
 dep="$prefix install -q -y fortune figlet lolcat"
-install="$prefix install -q -y "${lang_pkgs[@]}" "${gui_pkgs[@]}" "${util_pkgs[@]}" "${style_pkgs[@]}" "${game_pkgs[@]}" $@ "
+install="$prefix install -q -y "${lang_pkgs[@]}" "${libs_pkgs[@]}" "${gui_pkgs[@]}" "${util_pkgs[@]}" "${style_pkgs[@]}" "${game_pkgs[@]}" $@ "
 
 title="figlet -tc \"APT Installer\" | lolcat"
 txt0='echo -ne "\rinstall dependencies"'
