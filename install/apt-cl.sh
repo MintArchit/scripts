@@ -13,6 +13,10 @@ lang_pkgs=(
 	texlive-full
 )
 
+gui_pkgs=(
+	pdfarranger
+)
+
 util_pkgs=(
 	renameutils
 	socat
@@ -146,7 +150,7 @@ prefix="sudo apt-get"
 apt="$HOME/ghub/scripts/utils/apt.sh"
 
 dep="$prefix install -q -y fortune figlet lolcat"
-install="$prefix install -q -y "${lang_pkgs[@]}" "${util_pkgs[@]}" "${style_pkgs[@]}" "${game_pkgs[@]}" $@ "
+install="$prefix install -q -y "${lang_pkgs[@]}" "${gui_pkgs[@]}" "${util_pkgs[@]}" "${style_pkgs[@]}" "${game_pkgs[@]}" $@ "
 
 title="figlet -tc \"APT Installer\" | lolcat"
 txt0='echo -ne "\rinstall dependencies"'
