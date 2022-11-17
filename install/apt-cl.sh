@@ -21,6 +21,9 @@ libs_pkgs=(
 	libfontconfig1-dev
 	libxcb-xfixes0-dev 
 	libxkbcommon-dev
+	libaa1
+	libaa1-dev
+	libaa-bin 
 )
 
 gui_pkgs=(
@@ -33,6 +36,7 @@ gui_pkgs=(
 	gnome-shell-extensions 
 	gnome-shell-extension-desktop-icons-ng 
 	lxappearance
+	audacity
 )
 
 util_pkgs=(
@@ -105,9 +109,6 @@ style_pkgs=(
 	boxes 
 	beep
 	aewan
-	libaa1
-	libaa1-dev
-	libaa-bin 
 	toilet
 	cowsay
 	whiptail
