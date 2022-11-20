@@ -37,6 +37,7 @@ gui_pkgs=(
 	gnome-shell-extension-desktop-icons-ng 
 	lxappearance
 	audacity
+	sddm
 )
 
 util_pkgs=(
