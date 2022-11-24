@@ -23,7 +23,11 @@ libs_pkgs=(
 	libxkbcommon-dev
 	libaa1
 	libaa1-dev
-	libaa-bin 
+	libaa-bin
+	libqt5svg5
+	qml-module-qtquick-layouts
+	qml-module-qtgraphicaleffects
+	qml-module-qtquick-controls2
 )
 
 gui_pkgs=(
@@ -41,6 +45,7 @@ gui_pkgs=(
 )
 
 util_pkgs=(
+	pm-utils
 	renameutils
 	socat
 	blueman
