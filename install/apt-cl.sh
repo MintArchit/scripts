@@ -3,6 +3,7 @@
 # auto apt installer / updater
 
 lang_pkgs=(
+	postgresql
 	python3
 	python-is-python3
 	python3-pip

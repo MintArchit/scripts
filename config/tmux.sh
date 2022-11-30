@@ -3,5 +3,5 @@
 # author:	mintarchit
 # version:	1.0
 
-cp $HOME/ghub/dotfiles/.tmux.conf ~/.
-tmux kill-server
+cp $HOME/ghub/dotfiles/tmux/.tmux.conf ~/.
+#tmux kill-server
