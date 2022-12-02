@@ -31,20 +31,6 @@ libs_pkgs=(
 	qml-module-qtquick-controls2
 )
 
-gui_pkgs=(
-	pdfarranger
-	font-manager
-	mpv
-	polybar
-	picom
-	gnome-tweaks
-	gnome-shell-extensions 
-	gnome-shell-extension-desktop-icons-ng 
-	lxappearance
-	audacity
-	sddm
-)
-
 util_pkgs=(
 	pm-utils
 	renameutils
@@ -63,9 +49,7 @@ util_pkgs=(
 	sqlite3
 	curl
 	apt-utils
-	i3
 	feh
-	nemo
 	bluez
 	ffmpeg
 #	pup
@@ -164,7 +148,7 @@ prefix="sudo apt-get"
 apt='$HOME/ghub/scripts/utils/apt.sh'
 
 dep="$prefix install -q -y fortune figlet lolcat"
-install="$prefix install -q -y "${lang_pkgs[@]}" "${libs_pkgs[@]}" "${gui_pkgs[@]}" "${util_pkgs[@]}" "${style_pkgs[@]}" "${game_pkgs[@]}" $@ "
+install="$prefix install -q -y "${lang_pkgs[@]}" "${libs_pkgs[@]}" "${util_pkgs[@]}" "${style_pkgs[@]}" "${game_pkgs[@]}" $@ "
 
 title="figlet -tc \"APT Installer\" | lolcat"
 txt0='echo -ne "\rinstall dependencies"'

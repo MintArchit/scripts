@@ -8,6 +8,6 @@ powerlevel10="git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $
 
 $powerlevel10
 
-cp $HOME/ghub/dotfiles/sh/.p10k.zsh ~
+cp $HOME/ghub/dotfiles/zsh/.p10k.zsh ~
 
 echo "reopen terminal"
