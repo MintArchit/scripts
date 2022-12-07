@@ -33,6 +33,9 @@ gui_pkgs=(
 	sddm
 	i3
 	nemo
+	android-sdk
+	gimp
+	gnome-screenshot
 )
 
 
