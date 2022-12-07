@@ -36,6 +36,7 @@ gui_pkgs=(
 	android-sdk
 	gimp
 	gnome-screenshot
+	flameshot
 )
 
 
