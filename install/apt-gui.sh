@@ -20,6 +20,9 @@ libs_pkgs=(
 )
 
 gui_pkgs=(
+	#alacarte # starts, with bugs
+	#menulibre # doesnt start
+	#kmenuedit # huge amount of deps
 	pdfarranger
 	font-manager
 	mpv
