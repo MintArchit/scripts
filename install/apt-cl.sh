@@ -37,6 +37,7 @@ libs_pkgs=(
 )
 
 util_pkgs=(
+	stow
 	pm-utils
 	renameutils
 	socat
