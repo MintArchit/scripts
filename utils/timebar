@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# author:	mintarchit
+# version:	1.0
+
+i3-nagbar -m "$1 time has passed" &
