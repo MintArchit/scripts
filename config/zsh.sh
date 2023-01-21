@@ -7,7 +7,10 @@
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 $ohmyzsh
-cp $HOME/ghub/dotfiles/zsh/.zshrc ~
+
+pth="$HOME"
+
+cp -r $HOME/ghub/dotfiles/zsh/. $pth
 
 #chsh -s /bin/zsh
 #cat /etc/shells
