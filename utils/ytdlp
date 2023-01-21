@@ -1,0 +1,12 @@
+#!/bin/bash
+
+if [ "$#" -eq 1 ]; then
+	yt-dlp --config-locations ~/.config/ytdlp/vconfig $1
+elif [ "$#" -eq 2 ]; then
+	if [ "$1" == "m" ]; then
+		yt-dlp --config-locations ~/.config/ytdlp/mconfig $2
+	else
+		yt-dlp --config-locations ~/.config/ytdlp/vconfig $2
+	fi
+fi
+
