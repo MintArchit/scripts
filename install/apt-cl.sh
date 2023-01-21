@@ -37,6 +37,9 @@ libs_pkgs=(
 )
 
 util_pkgs=(
+	gnome-shell-pomodoro
+	tree
+	gnupg2
 	stow
 	pm-utils
 	renameutils
