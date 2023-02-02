@@ -12,6 +12,8 @@ lang_pkgs=(
 	cargo
 	#2GB
 	texlive-full
+	#golang-go
+	#gccgo-go
 )
 
 libs_pkgs=(
@@ -37,6 +39,11 @@ libs_pkgs=(
 )
 
 util_pkgs=(
+	ttyrec
+	gcc
+	x11-apps
+	xdotool
+	make
 	gnome-shell-pomodoro
 	tree
 	gnupg2

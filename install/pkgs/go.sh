@@ -4,6 +4,7 @@
 
 util_pkgs=(
 	github.com/antonmedv/countdown@latest
+	github.com/charmbracelet/vhs@latest
 )
 
 style_pkgs=(
@@ -11,7 +12,7 @@ style_pkgs=(
 
 prefix="go"
 
-install="$prefix install "${util_pkgs[@]}" "${style_pkgs[@]}" $@ "
+install="$prefix install -v "${util_pkgs[@]}" "${style_pkgs[@]}" $@ "
 
 title="figlet -ct \"Go  Installer\" | lolcat"
 txt0='printf "go install pkgs\n\n"'
