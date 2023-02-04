@@ -36,6 +36,7 @@ libs_pkgs=(
 	qml-module-qtquick-layouts
 	qml-module-qtgraphicaleffects
 	qml-module-qtquick-controls2
+	libncursesw5-dev
 )
 
 util_pkgs=(
@@ -99,7 +100,6 @@ util_pkgs=(
 	htop
 	pwgen
 	cloud-image-utils
-	vifm
 	vim
 	neofetch
 	testdisk

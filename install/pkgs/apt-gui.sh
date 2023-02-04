@@ -23,6 +23,7 @@ gui_pkgs=(
 	#alacarte # starts, with bugs
 	#menulibre # doesnt start
 	#kmenuedit # huge amount of deps
+	lshw-gtk
 	pdfarranger
 	font-manager
 	mpv
