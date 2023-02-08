@@ -40,9 +40,31 @@ libs_pkgs=(
 	libpng-dev
 	libxml2-utils
 	libidn-dev
+	libgpgme-dev
+	libdb-dev
+	libqdbm-dev
+	liblmdb-dev
+	libkyotocabinet-dev
+	librocksdb-dev
+	libtdb-dev
+	liblz4-dev
+	libzstd-dev
+	libsecret-1-dev
+	libgsasl-dev
+	libgnutls28-dev
+	libtool
+	libxapian-dev
+	libgmime-3.0-dev
+	libtalloc-dev 
+	zlib1g-dev
 )
 
 util_pkgs=(
+	pass
+	autoconf
+	automake
+	texinfo 
+	abook
 	gettext
 	xsltproc
 	poppler-utils

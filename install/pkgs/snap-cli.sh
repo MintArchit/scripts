@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo snap install pyphoon asciiquarium ascii-patrol ascii-clock
+sudo snap install pyphoon asciiquarium ascii-patrol ascii-clock neomutt
