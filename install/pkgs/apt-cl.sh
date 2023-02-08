@@ -37,9 +37,15 @@ libs_pkgs=(
 	qml-module-qtgraphicaleffects
 	qml-module-qtquick-controls2
 	libncursesw5-dev
+	libpng-dev
+	libxml2-utils
+	libidn-dev
 )
 
 util_pkgs=(
+	gettext
+	xsltproc
+	poppler-utils
 	ttyrec
 	gcc
 	x11-apps
