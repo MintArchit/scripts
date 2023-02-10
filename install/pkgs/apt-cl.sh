@@ -57,6 +57,7 @@ libs_pkgs=(
 	libgmime-3.0-dev
 	libtalloc-dev 
 	zlib1g-dev
+	libnotify-bin
 )
 
 util_pkgs=(
