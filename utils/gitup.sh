@@ -3,4 +3,7 @@
 # author:	mintarchit
 # version:	1.0
 
-git add . && git commit -m "$1" && git push
+cmd="git add \"$2\" && git commit -m \"$1\" && git push"
+alt="git add . && git commit -m \"$1\" && git push"
+
+[[ -z "$2" ]] && eval "$cmd" || eval "$alt"
