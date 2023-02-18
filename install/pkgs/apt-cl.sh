@@ -193,6 +193,7 @@ util_pkgs=(
 	ttf-mscorefonts-installer
 	duf
 	git-email
+	scdoc
 )
 
 style_pkgs=(
