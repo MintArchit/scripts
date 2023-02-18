@@ -6,4 +6,4 @@
 cmd="git add \"$2\" && git commit -m \"$1\" && git push"
 alt="git add . && git commit -m \"$1\" && git push"
 
-[[ -z "$2" ]] && eval "$cmd" || eval "$alt"
+[[ -z "$2" ]] && eval "$alt" || eval "$cmd"
