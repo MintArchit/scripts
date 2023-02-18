@@ -4,16 +4,19 @@
 
 lang_pkgs=(
 	postgresql
-	python3
-	python-is-python3
 	python3-pip
 	python3.10-venv
 	ruby
 	cargo
 	#2GB
-	texlive-full
+	#texlive-full
 	#golang-go
 	#gccgo-go
+	qt6-base-dev
+	qtcreator
+	nodejs
+	python-is-python3
+	python3
 )
 
 libs_pkgs=(
@@ -33,9 +36,6 @@ libs_pkgs=(
 	libstdc++6:i386
 	lib32z1
 	libbz2-1.0:i386
-	qml-module-qtquick-layouts
-	qml-module-qtgraphicaleffects
-	qml-module-qtquick-controls2
 	libncursesw5-dev
 	libpng-dev
 	libxml2-utils
@@ -56,11 +56,65 @@ libs_pkgs=(
 	libxapian-dev
 	libgmime-3.0-dev
 	libtalloc-dev 
-	zlib1g-dev
 	libnotify-bin
+	libatspi2.0-dev
+	libbluetooth-dev
+	libclang-dev
+	libcups2-dev
+	libdrm-dev
+	libegl1-mesa-dev
+	libfontconfig1-dev
+	libfreetype6-dev
+	libgstreamer1.0-dev
+	libhunspell-dev
+	libnss3-dev
+	libopengl-dev
+	libpulse-dev
+	libssl-dev
+	libts-dev
+	libx11-dev
+	libx11-xcb-dev
+	libxcb-glx0-dev
+	libxcb-icccm4-dev
+	libxcb-image0-dev
+	libxcb-keysyms1-dev
+	libxcb-randr0-dev
+	libxcb-render-util0-dev
+	libxcb-shape0-dev
+	libxcb-shm0-dev
+	libxcb-sync-dev
+	libxcb-util-dev
+	libxcb-xfixes0-dev
+	libxcb-xinerama0-dev
+	libxcb-xkb-dev
+	libxcb1-dev
+	libxcomposite-dev
+	libxcursor-dev
+	libxdamage-dev
+	libxext-dev
+	libxfixes-dev
+	libxi-dev
+	libxkbcommon-dev
+	libxkbcommon-x11-dev
+	libxkbfile-dev
+	libxrandr-dev
+	libxrender-dev
+	libxshmfence-dev
+	libxshmfence1
 )
 
 util_pkgs=(
+	zlib1g-dev
+	qml-module-qtquick-layouts
+	qml-module-qtgraphicaleffects
+	qml-module-qtquick-controls2
+	llvm
+	ninja-build
+	bison
+	build-essential
+	clang
+	flex
+	gperf
 	pass
 	autoconf
 	automake
@@ -117,7 +171,6 @@ util_pkgs=(
 	ruby-github-markup 
 	jp2a
 	aview
-	bb
 	alsa-base
 	alsa-tools
 	alsa-firmware-loaders
@@ -138,9 +191,12 @@ util_pkgs=(
 	neovim
 	most
 	ttf-mscorefonts-installer
+	duf
+	git-email
 )
 
 style_pkgs=(
+	grc
 	bb
 	boxes 
 	beep
