@@ -1,0 +1,18 @@
+#!/bin/bash
+
+current="$(pactl get-default-sink)"
+usb="$(pactl list sinks short | awk '/USB/ {print $2}')"
+internal="$(pactl list sinks short | awk '/analog/ {print $2}' | awk '/pci/ {print}')"
+#pactl list sinks short | awk '{print $2}'
+
+set_default () {
+    pactl set-default-sink "$1"
+}
+
+if [ "$current" = "$usb" ];then # if def sink contains usb in name
+    printf "change sink,source to: $internal \n"
+    set_default "$internal"
+else
+    printf "change sink,source to: $usb \n"
+    set_default "$usb"
+fi
