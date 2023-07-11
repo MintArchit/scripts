@@ -7,6 +7,9 @@
 url="https://addons.mozilla.org/firefox/downloads/file"
 
 exts=(
+	4067141
+	4053589
+	4053198
 	4011167
 	#4004810
 	4003179

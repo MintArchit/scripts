@@ -12,6 +12,6 @@ pth="$HOME"
 
 cp -r $HOME/ghub/dotfiles/zsh/. $pth
 
-#chsh -s /bin/zsh
-#cat /etc/shells
+chsh -s /bin/zsh
+cat /etc/shells
 echo "logout && login, so the change can take effect"
